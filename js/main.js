@@ -1,11 +1,21 @@
 $(document).ready(function () {
-    var swiper = new Swiper('.header-swiper-container', {
+
+
+    // Swiper.js
+    var headerSwiper = new Swiper('.header-swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         loop: true,
+        touchEventsTarget:'container',
     });
+    var storiesSwiper = new Swiper('.stories-swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop: true,
+    });
+
 
     // section service->img:hover
 
@@ -33,3 +43,15 @@ $(document).ready(function () {
 
 
 });
+
+
+var header = new Headroom(document.querySelector("#homepage-navbar"), {
+    tolerance: 5,
+    offset: 84,
+    classes: {
+        initial: "animated",
+        pinned: "slideDown",
+        unpinned: "slideUp"
+    }
+});
+header.init()
