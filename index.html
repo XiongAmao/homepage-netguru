@@ -220,12 +220,12 @@
             </div>
         </section>
         <!-- testimonials -->
-        <section class="homepage-testimonials">
+        <!--<section class="homepage-testimonials">
             <div class="container">
                 <h1 class="title-bottom-line">TESTIMONIALS</h1>
 
             </div>
-        </section>
+        </section>-->
         <!-- client-logo -->
         <section class="homepage-client-logo">
             <div class="container">
@@ -240,18 +240,18 @@
             </div>
         </section>
         <!-- resource -->
-        <section class="homepage-resource">
+        <!--<section class="homepage-resource">
             <div class="container">
-                <h1>FROM OUR RESOURCE</h1>
+                <h1 class="title-bottom-line">FROM OUR RESOURCE</h1>
             </div>
-        </section>
+        </section>-->
         <!-- team -->
         <section class="homepage-team">
             <div class="container">
                 <h1 class="title-bottom-line">MEET OUR TEAM</h1>
                 <div class="team-wrapper">
                     <div class="team-count">214</div>
-                    <img src="" alt="">
+                    <img src="img/people-optimized-min.png" alt="">
                 </div>
             </div>
         </section>
@@ -260,36 +260,43 @@
             <div class="container">
                 <h1>Contact us!</h1>
                 <form action="">
-                    <input type="text">
-                    <input type="text">
+                    <input type="email" name="email" placeholder="Your email address">
+                    <textarea type="text" placeholder="How we can help you?"></textarea>
+                    <div class="contact-form-sent-button">Sent message</div>
                 </form>
-                <div class="contact-form-sent-button">Sent message</div>
+
             </div>
         </section>
+        <!-- socials icon -->
         <section class="homepage-socials">
             <div class="container">
                 <div class="footer-socials-items">
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-behance" aria-hidden="true"></i></a>
                 </div>
             </div>
         </section>
         <!-- footer -->
         <footer class="homepage-footer">
             <div class="container">
+                <!-- newsLetter -->
                 <div class="footer-newsletter">
+                    <p>Newsletter</p>
                     <form action="">
-                        <input type="text">
-                        <div class="button">Sign up</div>
+                        <input type="email" name="email" placeholder="Email address">
+                        <div class="newsletter-button">Sign up</div>
                     </form>
                 </div>
+
+                <!-- footer info -->
                 <div class="footer-info">
+                    <!-- contacts -->
                     <div class="info-contacts">
-                        <a href=""><img src="" alt=""></a>
+                        <a class="info-contacts-logo" href=""><img src="img/netguru_logo.svg" alt=""></a>
                         <div class="info-contacts-items">
                             <div class="items">
                                 <a href="">hi@netguru.co</a>
@@ -305,6 +312,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- locations -->
                     <div class="info-menu_locations">
                         <div class="menu-wrapper">
                             <h4>MENU</h4>
@@ -326,14 +334,21 @@
                             <a href="">Dublin</a>
                         </div>
                     </div>
+                    <!-- awards -->
                     <div class="info-awards">
                         <h4>AWARDS</h4>
                         <a href=""><img src="img/logo_deloitte.png" alt=""></a>
                     </div>
                 </div>
+                <div class="footer-bg"></div>
             </div>
         </footer>
     </div>
+
+        <footer class="code-info">
+            <p>Design By <a class="netguru" href="https://www.dribbble.com/netguru">Netguru</a> Code By <a href="https://github.com/XiongAmao/homepage-netguru">XiongAmao</a></p>
+            <p>
+        </footer>
     <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-2.2.1.min.js"><\/script>')
