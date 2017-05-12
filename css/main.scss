@@ -38,6 +38,10 @@ body {
     @media screen and (min-width:300px) {
         width: 90%;
     }
+    h1{
+        color:#999;
+        font-size: 14px;
+    }
 }
 
 .clearfix::after,
@@ -734,8 +738,9 @@ body {
         margin-bottom: 40px;
         .statics-item {
             text-align: center;
-            width: 25%;
+            width: 100%;
             @media (min-width: 768px) {
+                width: 25%;
                 &:nth-child(-n+3) {
                     .statics-item-text {
                         border-right: 1px solid #e5e5e5;
@@ -749,8 +754,9 @@ body {
             .statics-item-text {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                  :nth-child(1) {
-                    margin-bottom: 5px;
+                    margin-bottom: 10px;
                     font-size: 48px;
                     line-height: 48px;
                     color: #00d664;
@@ -785,12 +791,47 @@ body {
 
 .homepage-testimonials {
     background: #fafafa;
+    overflow: hidden;
+    h1{
+        text-align: center;
+        margin:60px 0;
+        font-size: 14px;
+        color: #999;
+    }
 }
 
 
 /* homepage-client-logo */
 
-.homepage-client-logo {}
+.homepage-client-logo {
+    .container{
+        h1{
+            margin:60px 0;
+            text-align: center;
+        }
+        .client-logos{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 30px;
+            @media (max-width:480px){
+                flex-direction: column;
+            }
+            div{
+                flex-grow: 1;
+                text-align: center;
+                padding: 15px;
+            }
+            img{
+                width: 100%;
+                max-width:110px;
+                @media (min-width:768px){
+                    max-width: 160px;
+                }
+            }
+        }
+    }
+}
 
 
 /* homepage-resource */
@@ -804,8 +845,27 @@ body {
 /* homepage-team */
 
 .homepage-team {
-    height: 300px;
-    border: solid yellow 1px;
+    overflow: auto;
+    h1{
+        margin:70px 0;
+        text-align: center;
+    }
+    .team-wrapper{
+        background-image: url(../img/bg-map.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size:730px auto; 
+        .team-count{
+            text-align: center;
+            font-size: 200px;
+            color: #f0f0f0;
+            font-weight: bold;
+            @media (min-width:768px){
+                font-size: 250px;
+            }
+        }
+        
+    }
 }
 
 
