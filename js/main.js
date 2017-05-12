@@ -8,7 +8,7 @@ $(document).ready(function () {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         loop: true,
-        touchEventsTarget:'container',
+        touchEventsTarget: 'container',
     });
     var storiesSwiper = new Swiper('.stories-swiper-container', {
         pagination: '.swiper-pagination',
@@ -41,17 +41,17 @@ $(document).ready(function () {
 
     }
 
+    var header = new Headroom(document.querySelector("#homepage-navbar"), {
+        tolerance: 5,
+        offset: 84,
+        classes: {
+            initial: "animated",
+            pinned: "slideDown",
+            unpinned: "slideUp"
+        }
+    });
+    header.init()
 
 });
 
 
-var header = new Headroom(document.querySelector("#homepage-navbar"), {
-    tolerance: 5,
-    offset: 84,
-    classes: {
-        initial: "animated",
-        pinned: "slideDown",
-        unpinned: "slideUp"
-    }
-});
-header.init()
