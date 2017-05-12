@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
     // Swiper.js
-    var headerSwiper = new Swiper('.header-swiper-container', {
+    let headerSwiper = new Swiper('.header-swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         nextButton: '.swiper-button-next',
@@ -10,7 +10,7 @@ $(document).ready(function () {
         loop: true,
         touchEventsTarget: 'container',
     });
-    var storiesSwiper = new Swiper('.stories-swiper-container', {
+    let storiesSwiper = new Swiper('.stories-swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         loop: true,
@@ -41,7 +41,7 @@ $(document).ready(function () {
 
     }
 
-    var header = new Headroom(document.querySelector("#homepage-navbar"), {
+    let header = new Headroom(document.querySelector("#homepage-navbar"), {
         tolerance: 5,
         offset: 84,
         classes: {
